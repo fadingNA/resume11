@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import "../page/truenav.css";
 import "../main/homes.css";
-import Typical from "react-typical";
+
 //import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";

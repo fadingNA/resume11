@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBorderNone } from "react-icons/fa";
+
 import "../honestly/honestly.css";
 
 export default function Honestly() {
