@@ -1,0 +1,158 @@
+.displayprofile, .picture0{
+ background-color: #333;
+  height: 5%;
+}
+@media screen and (max-width: 960px) {
+  .picture-profile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: 1s ease-in-out;
+  }
+}
+@media screen and (min-width: 960px) {
+  .picture-profile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    transition: 1s ease-in-out;
+  }
+}
+
+
+.picture-profile{
+  display: flex;
+  justify-content: center;
+  margin-left: 13%;
+}
+@media screen and (max-width: 960px) {
+  .displayprofile {
+    margin: 25%;
+    font-size: 1rem;
+    transition: 1s ease-in-out;
+  }
+}
+@media screen and (min-width: 960px) {
+  .displayprofile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    transition: 1s ease-in-out;
+  }
+
+.loopName {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.signature-word {
+  display: flex;
+  justify-content: center;
+  color: #61dafb;
+  font-size: 1rem;
+}
+
+.highlighted-text {
+  font-size: 0.7rem;
+  color: #1f2235;
+}
+img {
+  border-radius: 50px;
+  width: 300px;
+  height: 260px;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+  margin: 15px 220px 0px 0px;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 0.4rem;
+  background-color: #1f2235;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer p {
+  background-color: #1f2235;
+  font-size: 14px;
+}
+
+.social-icon {
+  text-align: center;
+  background-color: #1f2235;
+  font-size: 20px;
+  margin: 5px 0px 0 5px;
+}
+
+.nav-icon p,
+.nav-icon {
+  background-color: #1f2235;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  background: #1f2235;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.btn,btn-show {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.btn:active,btn-show {
+  font-size: 5rem;
+  
+  transform: translateY(3px);
+}
+
+
+.primary-btn,btn-show {
+  color: var(--white);
+  border: 1px solid linen;
+  font-size: 18px;
+  background-color: #1f2235;
+}
+
+.information {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.welcomeLoop {
+  color: #1f2235;
+  font-size: 2rem;
+  margin: 0 0 200px 0;
+}
+.picture0{
+ display: inline-block;
+ justify-content: center;
+ width: 100%;
+}

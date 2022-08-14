@@ -1,0 +1,55 @@
+@media screen and (min-width: 960px) {
+  .honestly-details {
+    display: flex;
+    justify-content: center;
+    transition: 1s ease all;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .profile-main
+  {
+    display: flex;
+    justify-content: center;
+    transition: 0.8s all ease;
+  }
+}
+
+.primary-btn:hover,
+.btn-show:hover {
+  color:#333333;
+  border: 3px slategrey;
+  background-color:whitesmoke;
+  width: 50%;
+  transition: 2s ease-in;
+  z-index: -1;
+}
+
+.highlighted-btn,
+.highlighted-btn2 {
+  color: var(--white);
+  font-size: 8px;
+  background-color: #ff5823;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.6s ease;
+}
+
+.honestly-details {
+  display: flex;
+  font-size: 0.9rem;
+}
+.Honestly {
+  font-style: italic;
+  width: auto;
+  height: auto;
+  margin: 0 0px 20px 50px;
+  padding: -29px;
+}
+
+
+

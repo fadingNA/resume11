@@ -1,0 +1,32 @@
+
+.highlight {
+  font-style: bold;
+}
+
+.signature-honestly {
+  display: flex;
+  justify-content: flex-end;
+
+  text-align: left;
+}
+.Honestly h1 {
+  text-align: center;
+  margin-top: 2%;
+}
+.detail-contact {
+  font-size: 1rem;
+  text-align: right;
+  padding: 0;
+  margin: 0 100px 0 0;
+}
+
+.Honestly{
+  text-align: center;
+}
+
+.honestly-details{
+  
+  text-align: center;
+  
+  margin: 0;
+}
