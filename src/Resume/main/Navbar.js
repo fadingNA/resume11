@@ -1,46 +1,44 @@
 import React from "react";
-import { useRef } from "react";
+import {useRef} from "react";
 import "../page/truenav.css";
 import "../main/homes.css";
-import Typical from "react-typical";
+
 //import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {Link} from "react-router-dom";
+import {FaBars, FaTimes} from "react-icons/fa";
 import Togglevisible from "./toggle";
 
 export default function Navbar() {
-  const navRef = useRef();
+    const navRef = useRef();
 
-  const showNavBar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
-
-  
+    const showNavBar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+    };
 
 
-  return (
-    <header>
-      {""}
-      <nav ref={navRef}>
-        <Link to="#" className="#"></Link>
-        <a href="/indexmain">Home</a>
-        <a href="/home">Resume</a>
-        <a href="/honestly">Honestly</a>
-        <a href="/contact">Contact</a>
-        <button className="nav-btn nav-close-btn" onClick={showNavBar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavBar}>
-        <FaBars />
-      </button>
-      <div id="results-detail" className="Detail">
-        <Togglevisible>
-        EMAIL: nplodthong@myseneca.ca | TEL: 437-970-9999
-        </Togglevisible>  
-      </div>
-    </header>
-  );
+    return (
+        <header>
+            {""}
+            <nav ref={navRef}>
+                <Link to="#" className="#"></Link>
+                <a href="/indexmain">Home</a>
+                <a href="/home">Resume</a>
+                <a href="/honestly">Honestly</a>
+                <a href="/contact">Contact</a>
+                <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+                    <FaTimes/>
+                </button>
+            </nav>
+            <button className="nav-btn" onClick={showNavBar}>
+                <FaBars/>
+            </button>
+            <div id="results-detail" className="Detail">
+                <Togglevisible>
+                    EMAIL: nplodthong@myseneca.ca | TEL: 437-970-9999
+                </Togglevisible>
+            </div>
+        </header>
+    );
 }
 /*
 

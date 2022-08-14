@@ -5,39 +5,42 @@ import profilepic from "./non2.jpg";
 import "@fontsource/arima-madurai";
 
 export default function Indexmain() {
-  return (
-    <div className="non">
-      <span className="fullname">Nonthachai Plodthong 👾</span>
-      <div className="picture2">
-        {" "}
-        <img src={profilepic} className={"displayprofile"} alt={"non"} />
-      </div>
-      <div className={"profile-optio2"}>
-        <div clasName="profile-option"></div>{" "}
-        <Typical
-          className={"loopName"}
-          loop={Infinity}
-          steps={[
-            "FINAL ASSESSMENT 🤖",
-            1000,
-            "WEB222 🕶",
-            1000,
-            "FULLSTACK DEVELOPER 🤖",
-            1000,
-            "SENECA COLLEGE 🕶",
-            1000,
-          ]}
-        />
-        <br />
-        <button className={"btn primary-btn"}> Resume </button>
-        {"\u00a0\u00a0"}
-        <br />
-      </div>
+    return (
+        <div className="non">
 
-      <div className="optional-section">
-        {" "}
-        <h2>About me</h2>
-        <span className="aboutme">
+            <span className="fullname">Nonthachai Plodthong 👾</span>
+
+            <div className="picture2">
+                {" "}
+                <img src={profilepic} className={"displayprofile"} alt={"non"}/>
+            </div>
+            <div className={"profile-optio2"}>
+                <div clasName="profile-option"></div>
+                {" "}
+                <Typical
+                    className={"loopName"}
+                    loop={Infinity}
+                    steps={[
+                        "FINAL ASSESSMENT 🤖",
+                        1000,
+                        "WEB222 🕶",
+                        1000,
+                        "FULLSTACK DEVELOPER 🤖",
+                        1000,
+                        "SENECA COLLEGE 🕶",
+                        1000,
+                    ]}
+                />
+                <br/>
+                <button className={"btn primary-btn"}> Resume</button>
+                {"\u00a0\u00a0"}
+                <br/>
+            </div>
+
+            <div className="optional-section">
+                {" "}
+                <h2>About me</h2>
+                <span className="aboutme">
           <p>
             Hi everyone, My name is Nonthachai Plodthong. I'm a international
             student at Seneca College in Computer Science on third semesters
@@ -45,28 +48,28 @@ export default function Indexmain() {
             massive of ambitions, also I always work in huge amount of pressure
             when I was competitived as E-sport player, and multi-tasking and
             manage working properly
-            <br />
+            <br/>
           </p>
         </span>
-      </div>
-      <div className="aboutme2">
-        <h2>Basic Information</h2>
+            </div>
+            <div className="aboutme2">
+                <h2>Basic Information</h2>
 
-        <span>
-          DATE OF BIRTH: 12 AUGUST 1995 <br />
-          AGE: 28 <br />
+                <span>
+          DATE OF BIRTH: 12 AUGUST 1995 <br/>
+          AGE: 28 <br/>
           Language: English, Thai(Native), Chinese
         </span>
-      </div>
-      <div className="reflection">
-        <h2>Reflection</h2>
-        <span>
+            </div>
+            <div className="reflection">
+                <h2>Reflection</h2>
+                <span>
           <p id="paragraph-1">
             First of all, WEB222 is good foundation for who is starting to do
             web development like me. the course cover all basic HTML, CSS,
             Javsscipt and basic DOM. I have learnt how to validate input from
-            user, how to create table and more. <br />
-            <br />
+            user, how to create table and more. <br/>
+            <br/>
           </p>
           <p id="paragraph-2">
             On the other hand, this course also provide notes for read and guide
@@ -88,9 +91,9 @@ export default function Indexmain() {
             thing such as advance library and many more.
           </p>
         </span>
-      </div>
-    </div>
-  );
+            </div>
+        </div>
+    );
 }
 
 /*<div className="profile-main">
