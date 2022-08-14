@@ -4,13 +4,6 @@
     margin-right: 25px;
 }
 
-@media screen and(max-width: 960px) {
-    display: none
-
-;
-}
-
-
 label, h2 {
     display: block;
     margin: 0 auto;
