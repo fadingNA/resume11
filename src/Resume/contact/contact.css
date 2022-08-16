@@ -1,3 +1,76 @@
+* {
+
+    justify-items: center;
+}
+
+.set-all{
+    display: inline;
+
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin: 2%;
+    height: 30px;
+    width: 30%;
+}
+
+.btn-submit {
+    border-radius: 20px;
+    width: 20%;
+    background-color: #1f2235;
+    color: whitesmoke;
+}
+
+.btn-submit:active {
+    background-color: #333;
+    color: snow;
+}
+
+
+
+.email {
+    display: block;
+    justify-content: center;
+}
+
+textarea {
+    display: block;
+    margin: 3% auto;
+    width: 360px;
+    height: 500px;
+}
+
+.span-textarea {
+    background-color: #1f2235;
+    color: whitesmoke;
+    margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: unset;
+}
+.select {
+    display: block;
+    margin: auto;
+    font-style: italic;
+    font-size: 1rem;
+    color: #1f2235;
+    outline: none;
+    border: solid #1f2235;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.select:hover {
+    border: solid skyblue;
+}
+
+
+/*
 .btn-form {
     display: flex;
     align-items: center;
@@ -83,22 +156,6 @@ input {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
-.select {
-    display: block;
-    margin: auto;
-    font-style: italic;
-    font-size: 1rem;
-    color: #1f2235;
-    outline: none;
-    border: solid #1f2235;
-    border-radius: 5px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.select:hover {
-    border: solid skyblue;
-}
 
 .textarea-1 {
     display: block;
@@ -132,3 +189,4 @@ input {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+ */

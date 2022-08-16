@@ -26,8 +26,7 @@ function App() {
                     <Route path='/contact' component={Contact}/>
                     <Route path='/honestly' component={Honestly}/>
                 </Switch>
-                <Start/>
-                <Footer/>
+
             </Router>
         </React.Fragment>
     );

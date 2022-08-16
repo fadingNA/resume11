@@ -6,6 +6,8 @@ const Footer = () => (
             {" "}
             🇹🇭 former professional player Dota2 become full-time coding for 5 months
             🇹🇭{" "}
+            <br/>
+            Click Home Navigate to start
         </p>
         <div className={"social-icon"}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

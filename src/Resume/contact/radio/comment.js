@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import "../contact.css"
 
 const Comment = () => {
   const [state, handleSubmit] = useForm("mrgdgpwn");
@@ -10,7 +11,8 @@ const Comment = () => {
     <div className="ss">
       <div className="ds">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="comment">Leave a comment!</label>
+          <label htmlFor="comment"></label>
+          <span className={"span-textarea"}>Leave a comment down below!</span>
           <textarea className="textarea-1" />
           <ValidationError
             prefix="Comment"
