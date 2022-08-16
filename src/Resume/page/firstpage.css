@@ -1,0 +1,22 @@
+.detail-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .detail-page, .start-page {
+        font-size: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .detail-page, .start-page {
+        font-size: 5.5rem;
+    }
+}
+
+

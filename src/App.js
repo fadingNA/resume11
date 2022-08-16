@@ -5,28 +5,32 @@ import Contact from "./Resume/contact/contact";
 import Footer from "./Resume/main/Footer";
 import Honestly from "./Resume/honestly/honestly";
 import Home from "./Resume/page/home";
-import { BrowserRouter as Router,
-   Switch, 
-   Route } from "react-router-dom";
+import Start from './Resume/page/firstpage';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
 //import "./Resume/main/nav.css";
 //import Home from "./Resume/page/indexpage";
 
 function App() {
-  return (
-    <React.Fragment>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/indexmain' exact component={Indexmain}/>
-          <Route path='/home' component={Home}/>
-          <Route path='/contact' component={Contact}/>
-          <Route path='/honestly' component={Honestly}/>
-        </Switch>
-<Footer/>
-      </Router>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <Router>
+                <Navbar/>
+                <Switch>
+                    <Route path='/indexmain' exact component={Indexmain}/>
+                    <Route path='/home' component={Home}/>
+                    <Route path='/contact' component={Contact}/>
+                    <Route path='/honestly' component={Honestly}/>
+                </Switch>
+                <Start/>
+                <Footer/>
+            </Router>
+        </React.Fragment>
+    );
 }
 
 export default App;
