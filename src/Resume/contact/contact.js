@@ -1,141 +1,94 @@
 import React, {useState} from "react";
-import {useForm, ValidationError} from "@formspree/react";
+
 import "./contact.css";
 import Selection from "./select";
+import FormInput from "./newform";
+import {useForm} from "@formspree/react";
 
 export default function Contact() {
-
-    const [state, handleSubmit] = useForm("mrgdgpwn")
+    const [state, handleSubmit] = useForm("mrgdgpwn");
     if (state.succeeded) {
-        return <p className="submite-succeed">Thank YOU</p>;
+        return <p>Thanks for joining!</p>;
     }
-    return (
-        <>
-            <div className={"set-all"}>
-                <form onSubmit={handleSubmit}>
-                    <br/>
-                    <br/>
-                    <div>
-                        <label htmlFor="name">FULL NAME</label>
-                        <input id="name" type="name" name="fullname"/>
-                    </div>
-
-                    <div><label htmlFor="email">Email Address</label>
-                        <input id="email" type="email" name="email"/></div>
-
-                    <div><label htmlFor="Address">Address</label>
-                        <input id="address" type="address" name="address"/></div>
-
-                    <div><label htmlFor="City">City</label>
-                        <input id="city" type="city" name="city"/></div>
-
-                    <div><label htmlFor="Postal">Postal Code</label>
-                        <input id="postal" type="postal" name="postal"/></div>
+    const [values, setValues] = useState({
+        firstname: "",
+        lastName: "",
+        AddressName: "",
+        City: "",
+        Postal: "",
+        phone: ""
+    })
 
 
-                    <div className="radion-select">
-                        <Selection/>
-                    </div>
-                    <ValidationError prefix="Name" field="name" errors={state.errors}/>
-                    <ValidationError prefix="Email" field="email" errors={state.errors}/>
-                    <ValidationError
-                        prefix="Address"
-                        field="address"
-                        errors={state.errors}
-                    />
-                    <ValidationError prefix="City" field="city" errors={state.errors}/>
-                    <ValidationError
-                        prefix="postal"
-                        field="postal"
-                        errors={state.errors}
-                    />
-                    <ValidationError
-                        prefix="Message"
-                        field="message"
-                        errors={state.errors}
-                    />
-                    <br/>
-                    <br/>
+    const input = [{
+        id: 1, name: "firstName", type: "text", placeholder: "FirstName",
+        errorMessage: "Incorrect Firstname", label: "FirstName",
+        pattern: "^[A-Za-z0-9]{3,16}$", required: true
+    }, {
+        id: 2,
+        name: "lastName",
+        type: "text",
+        placeholder: "lastName",
+        errorMessage: "Incorrect Lastname",
+        label: "lastName", required: true
+    }, {
+        id: 3, name: "Address", type: "text", placeholder: "Address", label: "Address", required: true
+    }, {
+        id: 4, name: "City", type: "text", placeholder: "City", label: "City", required: true
+    }, {
+        id: 5,
+        name: "PostalCode",
+        type: "text",
+        placeholder: "PostalCode",
+        errorMessage: "Incorrect Postal Code",
+        label: "PostalCode", required: true
+    }, {
+        id: 6,
+        name: "PhoneNum",
+        type: "text",
+        placeholder: "PhoneNum",
+        errorMessage: "Only Number",
+        label: "PhoneNum",
+        required: true
+    },
+        {
+            id: 7,
+            name: "Email",
+            type: "email",
+            placeholder: "Email",
+            errorMessage: "please include @",
+            label: "Email",
+            required: true
+        }
 
-                    <button
-                        className="btn-submit"
+
+    ];
+
+    const onChange = (e) => {
+        setValues({...values, [e.target.name]: e.target.value})
+    }
+
+
+    return (<>
+        <div className={"set-all"}>
+            <form onSubmit={handleSubmit}>
+                <br/>
+                <br/>
+                <h1>Contact me</h1>
+                {input.map((input) => (
+                    <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
+                ))}
+
+                <div className="radion-select">
+                    <Selection/>
+                </div>
+                <button className={"submit-btn"}
                         type="submit"
                         disabled={state.submitting}
-                    >
-                        Submit
-                    </button>
-                </form>
-            </div>
-        </>);
+                >
+                    Submit
+                </button>
+            </form>
+        </div>
+    </>);
 }
-/*
-<form onSubmit={handleSubmit}>
-    <label htmlFor="email">Email Address</label>
-    <input id="email" type="email" name="email"/>
-    <ValidationError prefix="Email" field="email" errors={state.errors}/>
-    <textarea id="message" name="message"/>
-    <ValidationError prefix="Message" field="message" errors={state.errors}/>
-    <button className="btn-form" type="submit" disabled={state.submitting}>
-        Submit
-    </button>
-</form>
-const [state, handleSubmit] = useForm("mrgdgpwn");
-if (state.succeeded) {
-return <p className="submite-succeed">Thank YOU</p>;
-}
-return (
-<>
-    <div className="submitForm">
-        <form onSubmit={handleSubmit}>
-            <br/>
-            <br/>
-            <label htmlFor="name">FULL NAME</label>
-            <input id="name" type="name" name="fullname"/>
-
-            <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" name="email"/>
-
-            <label htmlFor="Address">Address</label>
-            <input id="address" type="address" name="address"/>
-
-            <label htmlFor="City">City</label>
-            <input id="city" type="city" name="city"/>
-
-            <label htmlFor="Postal">Postal Code</label>
-            <input id="postal" type="postal" name="postal"/>
-
-            <div className="radion-select">
-                <Selection/>
-            </div>
-            <ValidationError prefix="Name" field="name" errors={state.errors}/>
-            <ValidationError prefix="Email" field="email" errors={state.errors}/>
-            <ValidationError
-                prefix="Address"
-                field="address"
-                errors={state.errors}
-            />
-            <ValidationError prefix="City" field="city" errors={state.errors}/>
-            <ValidationError
-                prefix="postal"
-                field="postal"
-                errors={state.errors}
-            />
-            <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-            />
-            <br/>
-            <br/>
-
-            <button
-                className="btn-submit"
-                type="submit"
-                disabled={state.submitting}
-            >
-                Submit
-            </button>
-        </form>
-    </div>
-</>
-*/

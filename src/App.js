@@ -2,10 +2,10 @@ import React from "react";
 import Indexmain from "./Resume/main/indexmain";
 import Navbar from "./Resume/main/Navbar";
 import Contact from "./Resume/contact/contact";
-import Footer from "./Resume/main/Footer";
+//import Footer from "./Resume/main/Footer";
 import Honestly from "./Resume/honestly/honestly";
 import Home from "./Resume/page/home";
-import Start from './Resume/page/firstpage';
+//import Start from './Resume/page/firstpage';
 import {
     BrowserRouter as Router,
     Switch,
